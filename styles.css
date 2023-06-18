@@ -187,6 +187,13 @@ body {
 .skills__text {
     color: var(--secondary-text-color);
     text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills__text>p {
+    padding: 10px 20px;
 }
 
 /* Experience and additional info styles */
