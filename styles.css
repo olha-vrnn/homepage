@@ -10,12 +10,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 
-    --primary-text-color: #181820;
+    --primary-text-color: #373740;
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
     --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --text-decoration-color: #6000ba;
 }
 
 .container {
@@ -50,19 +50,23 @@ body {
     margin-bottom: 15px;
 }
 
+@media screen and (max-width: 700px) {
+
+    .contact-info__block {
+        flex-wrap: wrap;
+    }
+
+    .contact-info__item {
+        margin-bottom: 20px;
+    }
+
+}
+
+
 @media screen and (max-width: 576px) {
 
-    .main-info,
-    .contact_info_container {
+    .main-info {
         flex-direction: column;
-    }
-
-    .contact_info_container {
-        align-items: center;
-    }
-
-    .contact-info__block:not(:last-child) {
-        margin-bottom: 20px;
     }
 
     .experiences {
@@ -86,13 +90,17 @@ body {
 
 .contact-info__sub-header {
     color: var(--secondary-text-color);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.contact_info_container {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-info__block {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .contact-info__block--center {
@@ -104,15 +112,21 @@ body {
     text-decoration: none;
     display: flex;
     justify-content: start;
+    align-items: center;
+    padding: 0 10px;
 }
 
-.contact-info__item:not(:last-child) {
-    margin-bottom: 20px;
+.contact-info__item:hover {
+    color: var(--text-decoration-color);
 }
+
+/* .contact-info__item:not(:last-child) {
+    /* margin-right: 30px; */
+
 
 .contact-info__item-icon-wrapper {
     margin-right: 10px;
-    width: 20px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
 }
@@ -128,11 +142,12 @@ body {
 
 .contact-info__avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
+    margin-bottom: 30px;
 }
 
 /* Intro and skills styles */
