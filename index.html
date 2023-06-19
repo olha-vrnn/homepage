@@ -1,15 +1,319 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Résumé</title>
+    <script src="https://kit.fontawesome.com/37ac7f3104.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    ― Hello World! &#x1F609;
+    <main>
+        <div class="resume">
+            <div class="container">
+                <div class="resume__block">
+                    <h1 class="contact-info__header">Olya Voronina</h1>
+                    <h3 class="contact-info__sub-header">Dreamer and aspiring developer</h3>
+
+                    <div class="contact_info_container">
+
+                        <div class="contact-info__block contact-info__block--center">
+                            <img class="contact-info__avatar" src="assets/olya-avatar.jpg" alt="Avatar">
+                        </div>
+
+                        <div class="contact-info__block">
+                            <a href="https://www.google.com/maps?q=Kyiv" rel="author" class="contact-info__item"
+                                target="_blank">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <i class="fa-solid fa-location-dot contact-info__item-icon"></i>
+                                </div>
+                                <span>Kyiv, Ukraine</span>
+                            </a>
+                            <a href="mailto:olha.vrnn@gmail.com" rel="author" class="contact-info__item">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <i class="fa-solid fa-envelope contact-info__item-icon"></i>
+                                </div>
+                                <span>olha.vrnn@gmail.com</span>
+                            </a>
+                            <a href="https://t.me/olyaa_vrn" rel="author" class="contact-info__item" target="_blank">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <i class="fa-solid fa-paper-plane contact-info__item-icon"></i>
+                                </div>
+                                <span>@olyaa_vrn</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/olha-voronina/" rel="author" class="contact-info__item"
+                                target="_blank">
+                                <div class="contact-info__item-icon-wrapper">
+                                    <i class="fa-brands fa-linkedin contact-info__item-icon"></i>
+                                </div>
+                                <span>olha-voronina</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                    <div class="intro">
+                        <div class="intro__icon-wrapper">
+                            <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="intro_text">Utilizing my experience in creating and managing my own online business, I
+                            intend to leverage the skills acquired for personal growth and development in the field of
+                            development. After successfully completing relevant courses, I continue to deepen my
+                            knowledge in this field. Currently, my goal is to successfully pass the selection process
+                            for Binary Studio Academy and secure an internship opportunity, where I can apply and expand
+                            my knowledge, kickstarting a rewarding career in this dynamic industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                    <div class="skills">
+                        <h3 class="block__header">Soft Skills</h3>
+                        <div class="skills__text">
+                            <p>&#x1F4AC; Communication </p>
+                            <p>&#x1F91D; Teamwork and Collaboration</p>
+                            <p>&#x1F500; Adaptability</p>
+                            <p>&#x1F9E9; Problem-solving</p>
+                            <p>&#x1F50D; Attention to detail</p>
+                            <p>&#x1F5D3; Time management</p>
+                            <p>&#x1F4A1; Critical thinking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="resume__block">
+                    <div class="main-info">
+                        <div class="experiences">
+                            <h3 class="block__header">Employment</h3>
+                            <div class="experiences__company">
+                                <div class="experiences__company-header">
+                                    <span class="experiences__company-header-durability">2014 - 2020</span>
+                                    <h3 class="experiences__company-header-name">Founder/Owner, Online Cosmetics Store
+                                    </h3>
+                                    <span class="experiences__company-header-subheading">Self-employed</span>
+                                </div>
+
+                                <div class="experiences__company-project">
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>Successfully establishing and leading an online cosmetics store, managing
+                                            e-commerce, personnel, and supplier/vendor partnerships.</li>
+                                        <li>Building and leading a team of developers to launch and maintain an
+                                            efficient e-commerce platform.</li>
+                                        <li>Developing a deep understanding of e-commerce, entrepreneurship, and the
+                                            importance of user experience in website development.</li>
+                                        <li>Conducting website testing, including functional testing, user interface
+                                            testing, and compatibility testing, in collaboration with developers to
+                                            ensure quality and reliability.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experiences">
+                            <h3 class="block__header">Courses</h3>
+                            <div class="experiences__company">
+                                <div class="experiences__company-header">
+                                    <span class="experiences__company-header-durability">Present</span>
+                                    <h3 class="experiences__company-header-name">React - The Complete Guide</h3>
+                                    <span class="experiences__company-header-subheading">Udemy, Maximilian
+                                        Schwarzmüller</span>
+                                </div>
+
+                                <div class="experiences__company-project">
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>Learning the fundamentals of React, working with events and states, React
+                                            Hooks.</li>
+                                        <li>Debugging React apps.</li>
+                                        <li>Redux, React Routing, Next.js, deploying React apps, and animations.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="experiences__company">
+                                <div class="experiences__company-header">
+                                    <span class="experiences__company-header-durability">Mar 2023 - May 2023</span>
+                                    <h3 class="experiences__company-header-name">Front-End Advanced</h3>
+                                    <span class="experiences__company-header-subheading">IT Education Academy
+                                        (ITEA)</span>
+                                </div>
+
+                                <div class="experiences__company-project">
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>Learning design patterns, file caching, process management using Web Workers
+                                            API, creating Progressive Web Applications (PWA), understanding TypeScript
+                                            usage.</li>
+                                        <li>Studying project management methodologies and software development
+                                            frameworks Agile/Scrum/Kanban.</li>
+                                        <li>Familiarity with popular frameworks and libraries such as React, Angular,
+                                            Vue.js.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="experiences__company">
+                                <div class="experiences__company-header">
+                                    <span class="experiences__company-header-durability">Oct 2022 - Feb 2023</span>
+                                    <h3 class="experiences__company-header-name">Front-End Pro</h3>
+                                    <span class="experiences__company-header-subheading">IT Education Academy
+                                        (ITEA)</span>
+                                </div>
+
+                                <div class="experiences__company-project">
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>Proficiency in JavaScript, ability to manipulate DOM elements, fundamental
+                                            principles of OOP and their application.</li>
+                                        <li>Utilization of Gulp and Webpack for project automation.</li>
+                                        <li>Employment of AJAX for seamless data retrieval and updates, utilization of
+                                            API (Application Programming Interface) for interaction with third-party
+                                            services and obtaining necessary data.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="experiences__company">
+                                <div class="experiences__company-header">
+                                    <span class="experiences__company-header-durability">Jul 2022 - Aug 2022</span>
+                                    <h3 class="experiences__company-header-name">HTML/CSS</h3>
+                                    <span class="experiences__company-header-subheading">Logos IT Academy</span>
+                                </div>
+
+                                <div class="experiences__company-project">
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>Acquiring knowledge and skills in HTML and CSS, creating responsive,
+                                            flexible, and cross-browser compatible layouts.</li>
+                                        <li>Experience with Flexbox and Grid Layout.</li>
+                                        <li>Proficiency in working with SASS/SCSS preprocessors.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experiences">
+                            <h3 class="block__header">Education</h3>
+                            <div class="experiences__company">
+                                <div class="experiences__company-header">
+                                    <span class="experiences__company-header-durability">Sep 2006 - May 2012</span>
+                                    <h3 class="experiences__company-header-name">Master of Sociology</h3>
+                                    <span class="experiences__company-header-subheading">Taras Shevchenko National
+                                        University of Kyiv</span>
+                                </div>
+
+                                <div class="experiences__company-project">
+                                    <ul class="experiences__company-project-responsibilities">
+                                        <li>Developed research methodology skills, enabling me to gather and analyze
+                                            data effectively.</li>
+                                        <li>Gained a strong understanding of human behavior and user experience,
+                                            enhancing my ability to create user-centric designs and intuitive
+                                            interfaces.</li>
+                                        <li>Honed critical thinking and analytical skills, allowing me to approach
+                                            complex coding challenges with a logical and systematic mindset.</li>
+                                        <li>Improved my communication skills through sociological research, facilitating
+                                            effective collaboration with team members and clients, as well as clear and
+                                            concise conveyance of ideas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                    <div class="likes">
+                        <h3 class="block__header">My likes</h3>
+                        <div class="likes-slider">
+
+                            <div class="likes-slider__box">
+                                <div class="likes-slider__img">
+                                    <img src="./assets/likes-slider/slide-1.jpg" alt="">
+                                </div>
+                                <p class="likes-slider__text">New towns and countries</p>
+                            </div>
+
+                            <div class="likes-slider__box">
+                                <div class="likes-slider__img">
+                                    <img src="./assets/likes-slider/slide-2.jpg" alt="">
+                                </div>
+                                <p class="likes-slider__text">Snowboarding</p>
+                            </div>
+
+                            <div class="likes-slider__box">
+                                <div class="likes-slider__img">
+                                    <img src="./assets/likes-slider/slide-5.jpg" alt="">
+                                </div>
+                                <p class="likes-slider__text">Sunrises and sunsets</p>
+                            </div>
+
+                            <div class="likes-slider__box">
+                                <div class="likes-slider__img">
+                                    <img src="./assets/likes-slider/slide-3.jpg" alt="">
+                                </div>
+                                <p class="likes-slider__text">Long walks</p>
+                            </div>
+
+                            <div class="likes-slider__box">
+                                <div class="likes-slider__img">
+                                    <img src="./assets/likes-slider/slide-7.jpg" alt="">
+                                </div>
+                                <p class="likes-slider__text">Delicious food</p>
+                            </div>
+
+                            <div class="likes-slider__box">
+                                <div class="likes-slider__img">
+                                    <img src="./assets/likes-slider/slide-4.jpg" alt="">
+                                </div>
+                                <p class="likes-slider__text">Mountains</p>
+                            </div>
+
+                            <div class="likes-slider__box">
+                                <div class="likes-slider__img">
+                                    <img src="./assets/likes-slider/slide-6.jpg" alt="">
+                                </div>
+                                <p class="likes-slider__text">Summer evenings in Kyiv</p>
+                            </div>
+
+                            <div class="likes-slider__box">
+                                <div class="likes-slider__img">
+                                    <img src="./assets/likes-slider/slide-8.jpg" alt="">
+                                </div>
+                                <p class="likes-slider__text">Harry Potter</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                    <form class="contact-form">
+                        <h3 class="block__header">Contact me</h3>
+                        <p class="contact-form__text">If you have any questions or suggestions for me, I will be happy to respond.</p>
+                        <input name="name" type="text" class="feedback-input" placeholder="Name">
+                        <input name="email" type="email" class="feedback-input" placeholder="Email">
+                        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                        <input type="submit" value="SUBMIT">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./slick/slick-init.js"></script>
+
 </body>
 
 </html>
