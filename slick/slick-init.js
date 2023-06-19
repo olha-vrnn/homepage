@@ -4,7 +4,7 @@ $('.likes-slider').slick({
     slidesToShow: 3,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3500,
+    autoplaySpeed: 2500,
     responsive: [
         {
             breakpoint: 830,
