@@ -24,18 +24,6 @@ body {
     max-width: 900px;
 }
 
-.fh {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.fv {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .resume {
     margin: 50px auto;
     border: 1px solid #f5f5f5;
@@ -50,29 +38,6 @@ body {
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 700px) {
-
-    .contact-info__block {
-        flex-wrap: wrap;
-    }
-
-    .contact-info__item {
-        margin-bottom: 20px;
-    }
-
-}
-
-
-@media screen and (max-width: 576px) {
-
-    .main-info {
-        flex-direction: column;
-    }
-
-    .experiences {
-        margin-right: 0;
-    }
-}
 
 /* Contact info styles */
 
@@ -141,8 +106,7 @@ body {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border: 3px solid;
-    border-color: var(--text-decoration-color);
+    border: 3px solid var(--text-decoration-color);
     margin-bottom: 30px;
 }
 
@@ -174,11 +138,12 @@ body {
     text-align: justify;
 }
 
-.skills__header, .likes__header {
+.block__header {
     color: var(--secondary-text-color);
     text-align: center;
     margin-bottom: 15px;
 }
+
 
 .skills__text {
     color: var(--secondary-text-color);
@@ -200,12 +165,6 @@ body {
 
 .experiences:not(:last-child) {
     border-bottom: 3px solid var(--border-color);
-}
-
-.experiences__header {
-    color: var(--secondary-text-color);
-    text-align: left;
-    margin-bottom: 20px;
 }
 
 .experiences__company-header {
@@ -243,6 +202,7 @@ body {
     padding-left: 20px;
 }
 
+/* My likes */
 
 .likes-slider__box {
     display: flex;
@@ -266,5 +226,88 @@ body {
     text-align: center;
 }
 
+/* Contact form */
 
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
 
+.contact-form__text {
+    color: #6a737d;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.feedback-input {
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    line-height: 20px;
+    background-color: transparent;
+    border: 2px solid #6000baa2;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid var(--text-decoration-color);
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    width: 100%;
+    background: #6000baa2;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    padding: 12px 0;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 600;
+}
+
+[type="submit"]:hover {
+    background: var(--text-decoration-color);
+}
+
+/* @media  */
+
+@media screen and (max-width: 700px) {
+
+    .contact-info__block {
+        flex-wrap: wrap;
+    }
+
+    .contact-info__item {
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .main-info {
+        flex-direction: column;
+    }
+
+    .experiences {
+        margin-right: 0;
+    }
+}
