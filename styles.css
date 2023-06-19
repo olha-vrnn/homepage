@@ -174,7 +174,7 @@ body {
     text-align: justify;
 }
 
-.skills__header {
+.skills__header, .likes__header {
     color: var(--secondary-text-color);
     text-align: center;
     margin-bottom: 15px;
@@ -242,4 +242,29 @@ body {
     color: var(--secondary-text-color);
     padding-left: 20px;
 }
+
+
+.likes-slider__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.likes-slider__img {
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.likes-slider__img img {
+    width: 100%;
+}
+
+.likes-slider__text {
+    text-align: center;
+}
+
+
 
